@@ -1,0 +1,20 @@
+/* HEADER */
+
+#main-header {
+    height: 100vh;
+    background-image: url(../img/header-background.jpg);
+    @include background-styles;
+    @include flex-container;
+
+    .header-caption {
+        @include flex-container;
+        flex-direction: column;
+        color: $default-color;
+
+        h1 {
+            font-size: 4em;
+            font-family: $second-font;
+        }
+    }
+
+}

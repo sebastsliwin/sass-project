@@ -1,0 +1,176 @@
+/* Fonts */
+/* color */
+/*Main styles*/
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+
+* {
+  box-sizing: border-box; }
+
+span {
+  font-weight: 400;
+  color: #1ac056; }
+
+section {
+  padding: 60px 0; }
+  section .section-header {
+    margin-bottom: 70px;
+    width: 100%;
+    text-align: center; }
+    section .section-header h2 {
+      color: #333;
+      margin-bottom: 20px;
+      font-family: "Roboto", sans-serif; }
+  section h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin: 10px 0; }
+
+/* NAVBAR */
+#main-nav {
+  background-color: #fff; }
+  #main-nav .nav-item {
+    margin: 0 25px; }
+    #main-nav .nav-item a {
+      text-decoration: none;
+      color: #1ac056; }
+      #main-nav .nav-item a:hover {
+        color: #137e39; }
+
+/* HEADER */
+#main-header {
+  height: 100vh;
+  background-image: url(../img/header-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #main-header .header-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff; }
+    #main-header .header-caption h1 {
+      font-size: 4em;
+      font-family: "Roboto", sans-serif; }
+
+/* ABOUT */
+#about {
+  background-color: #f9fcfe;
+  box-shadow: -1px 6px 20px 0px #535353; }
+  #about img {
+    height: 350px;
+    border: 15px solid #fff;
+    border-radius: 15px; }
+
+/* Portfolio */
+#portfolio .background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  #portfolio .background .mask {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.4s;
+    padding: 10px; }
+    #portfolio .background .mask .border {
+      height: 100%;
+      border: 1px solid #fff;
+      position: relative; }
+      #portfolio .background .mask .border .content {
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%); }
+        #portfolio .background .mask .border .content a {
+          color: #fff;
+          transition: all 0.4s; }
+          #portfolio .background .mask .border .content a .fa-link {
+            font-size: 30px; }
+          #portfolio .background .mask .border .content a:hover {
+            color: #1ac056; }
+        #portfolio .background .mask .border .content h3 {
+          color: #fff; }
+  #portfolio .background:hover .mask {
+    opacity: 1; }
+
+#bg1 {
+  background-image: url("../img/portfolio1.jpg"); }
+
+#bg2 {
+  background-image: url("../img/portfolio2.jpg"); }
+
+#bg3 {
+  background-image: url("../img/portfolio3.jpg"); }
+
+#portfolio .col-md-4,
+#portfolio .col-sm-12,
+#portfolio .col-sm-12 {
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+/* SECTION CONTACT */
+#contact {
+  background-color: #213b50;
+  color: #fff; }
+  #contact a {
+    color: #1ac056; }
+  #contact .social-media {
+    margin-top: 30px; }
+    #contact .social-media a {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #fff;
+      font-size: 30px;
+      color: #fff;
+      text-align: center;
+      margin-right: 5px;
+      transition: all 0.4s; }
+      #contact .social-media a:hover {
+        background-color: #fff;
+        color: #213b50; }
+      #contact .social-media a .fab {
+        line-height: 50px; }
+  #contact .form-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    #contact .form-column input,
+    #contact .form-column textarea {
+      height: 40px;
+      background-color: #2b4a64;
+      border: none;
+      font-size: 14px;
+      color: #fff; }
+    #contact .form-column textarea {
+      height: 50px; }
+    #contact .form-column input[type="submit"] {
+      background-color: #1ac056;
+      border: 1px solid #000;
+      width: 100px;
+      height: 40px;
+      color: #fff;
+      cursor: pointer;
+      align-self: flex-end; }
+      #contact .form-column input[type="submit"]:hover {
+        background-color: #fff;
+        color: #1ac056; }
+
+/* footer */
+footer {
+  background-color: #142634;
+  color: #fff; }
+  footer p {
+    margin: 0 10px; }

@@ -1,0 +1,39 @@
+/*Main styles*/
+
+body {
+    margin: 0;
+    font-family: $default-font;
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+span {
+    font-weight: 400;
+    color: $additional-color;
+}
+
+section {
+    padding: 60px 0;
+
+    .section-header {
+        margin-bottom: 70px;
+        width: 100%;
+        text-align: center;
+
+        h2 {
+            color: $header-color;
+            margin-bottom: 20px;
+            font-family: $second-font;
+        }
+    }
+
+    h3 {
+        color: $header-color;
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+}

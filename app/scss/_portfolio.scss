@@ -1,0 +1,71 @@
+/* Portfolio */
+
+#portfolio .background {
+    height: 350px;
+    width: 100%;
+    @include background-styles;
+
+    .mask {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: all 0.4s;
+        padding: 10px;
+
+        .border {
+            height: 100%;
+            border: 1px solid #fff;
+            position: relative;
+
+            .content {
+                text-align: center;
+                color: $default-color;
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+
+                a {
+                    color: $default-color;
+                    transition: all 0.4s;
+
+                    .fa-link {
+                        font-size: 30px;
+                    }
+
+                    &:hover {
+                        color: $additional-color;
+                    }
+                }
+
+                h3 {
+                    color: $default-color;
+                }
+            }
+        }
+    }
+
+    &:hover .mask {
+        opacity: 1;
+    }
+}
+
+#bg1 {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#bg2 {
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#bg3 {
+    background-image: url('../img/portfolio3.jpg');
+}
+
+.col-md-4,
+.col-sm-12,
+.col-sm-12 {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
